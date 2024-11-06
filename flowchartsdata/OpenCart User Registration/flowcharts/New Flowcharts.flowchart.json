@@ -8,12 +8,24 @@
         "id": "fcn_start_0",
         "content": "Start",
         "nodeType": "start",
+        "branches": [
+          "fcn_test_0"
+        ]
+      },
+      "fcn_test_0": {
+        "id": "fcn_test_0",
+        "content": "Test",
+        "nodeType": "pathlabel",
         "branches": []
       }
     },
     "positions": {
       "fcn_start_0": {
         "top": 150.0,
+        "left": 500.0
+      },
+      "fcn_test_0": {
+        "top": 211.0,
         "left": 500.0
       }
     },
