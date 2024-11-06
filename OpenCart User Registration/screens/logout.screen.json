@@ -1,0 +1,23 @@
+{
+  "modifiedOn": "2024-02-09T06:59:30.156Z",
+  "name": "logout",
+  "id": "-1",
+  "type": 2,
+  "createdOn": "2024-02-08T19:59:21Z",
+  "content": {
+    "accessors": [
+      {
+        "id": "acc0",
+        "name": "Heading1 Account Logout",
+        "accessor": "_heading1(\"Account Logout\")"
+      },
+      {
+        "id": "acc1",
+        "name": "Link Login 1",
+        "accessor": "_link(\"Login[1]\")"
+      }
+    ]
+  },
+  "enabled": false,
+  "parentId": ""
+}

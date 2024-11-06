@@ -1,0 +1,40 @@
+{
+  "modifiedOn": "2024-02-09T06:59:53.285Z",
+  "name": "Verify $user not loggedIn",
+  "id": "-1",
+  "type": 3,
+  "createdOn": "2024-02-09T01:27:43Z",
+  "content": {
+    "isSystemKeyword": false,
+    "title": "Verify $user not loggedIn",
+    "parameters": [
+      {
+        "parameterId": "user_",
+        "entityTypeId": "user",
+        "suffix": ""
+      }
+    ],
+    "steps": [
+      {
+        "commented": false,
+        "action": "_getText",
+        "stepParameters": [
+          {
+            "isCustomParameter": false,
+            "customValue": "_div(\"alert alert-danger alert-dismissible\")",
+            "screenId": "login",
+            "accessorId": "acc2"
+          }
+        ],
+        "stepType": "Assert",
+        "assertType": "Equals",
+        "secondaryParam": {
+          "isCustomParameter": true,
+          "customValue": "\"Warning: No match for E-Mail Address and/or Password.\""
+        }
+      }
+    ]
+  },
+  "enabled": false,
+  "parentId": ""
+}

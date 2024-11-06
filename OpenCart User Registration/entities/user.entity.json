@@ -1,0 +1,170 @@
+{
+  "modifiedOn": "2024-05-24T07:12:01.469Z",
+  "name": "user",
+  "id": "-1",
+  "type": 1,
+  "createdOn": "2024-01-31T13:53:38Z",
+  "content": {
+    "default": {
+      "attr_01707461914621": {
+        "name": "firstname",
+        "accessors": [
+          {
+            "id": "acc0",
+            "name": "Firstname Input",
+            "accessor": "_textbox(\"firstname\")",
+            "messageAccessor": "_div(\"text-danger\", _in(_div(\"/First Name First Name/\")))"
+          }
+        ],
+        "type": "text",
+        "props": {
+          "prefix": "Rishabh",
+          "min-length": "0",
+          "max-length": "0"
+        },
+        "invalidData": [
+          {
+            "value": "",
+            "message": "First Name must be between 1 and 32 characters!",
+            "comment": ""
+          },
+          {
+            "value": "Negative Firstname Negative Firstname Negative Firstname",
+            "message": "First Name must be between 1 and 32 characters!",
+            "comment": ""
+          }
+        ],
+        "validData": [
+          {
+            "value": "Positive Firstname",
+            "comment": ""
+          }
+        ]
+      },
+      "attr_11707461914621": {
+        "name": "lastname",
+        "accessors": [
+          {
+            "id": "acc0",
+            "name": "Lastname Input",
+            "accessor": "_textbox(\"lastname\")",
+            "messageAccessor": "_div(\"text-danger\", _in(_div(\"/Last Name Last Name/\")))"
+          }
+        ],
+        "type": "text",
+        "props": {
+          "prefix": "Pant",
+          "min-length": "0",
+          "max-length": "0"
+        },
+        "invalidData": [
+          {
+            "value": "",
+            "message": "Last Name must be between 1 and 32 characters!",
+            "comment": ""
+          },
+          {
+            "value": "Negative Lastname Negative Lastname Negative Lastname",
+            "message": "Last Name must be between 1 and 32 characters!",
+            "comment": ""
+          }
+        ],
+        "validData": [
+          {
+            "value": "Positive Lastname",
+            "comment": ""
+          }
+        ]
+      },
+      "attr_21707461914621": {
+        "name": "email",
+        "accessors": [
+          {
+            "id": "acc0",
+            "name": "Email Input",
+            "accessor": "_emailbox(\"email\")",
+            "messageAccessor": "_div(\"text-danger\", _in(_div(\"/E-Mail E-Mail/\")))"
+          },
+          {
+            "id": "acc1",
+            "name": "Email Input",
+            "accessor": "_textbox(\"email\")",
+            "messageAccessor": ""
+          }
+        ],
+        "type": "email",
+        "props": {
+          "names": [
+            "r.pant"
+          ],
+          "domains": [
+            "example.com"
+          ],
+          "add-timestamp": "true"
+        },
+        "invalidData": [
+          {
+            "value": "",
+            "message": "E-Mail Address does not appear to be valid!",
+            "comment": ""
+          },
+          {
+            "value": "negative@example",
+            "message": "E-Mail Address does not appear to be valid!",
+            "comment": ""
+          }
+        ],
+        "validData": []
+      },
+      "attr_31707461914621": {
+        "name": "phone",
+        "accessors": [
+          {
+            "id": "acc0",
+            "name": "Phone Input",
+            "accessor": "_telephonebox(\"telephone\")",
+            "messageAccessor": ""
+          }
+        ],
+        "type": "number",
+        "props": {
+          "min": "9500000123",
+          "max": "9500000123"
+        },
+        "invalidData": [],
+        "validData": [
+          {
+            "value": "9500000001",
+            "comment": ""
+          }
+        ]
+      },
+      "attr_41707461914621": {
+        "name": "password",
+        "accessors": [
+          {
+            "id": "acc0",
+            "name": "Password Input",
+            "accessor": "_password(\"password\")",
+            "messageAccessor": ""
+          },
+          {
+            "id": "acc1",
+            "name": "Confirm Input",
+            "accessor": "_password(\"confirm\")",
+            "messageAccessor": ""
+          }
+        ],
+        "type": "simpletext",
+        "props": {
+          "text": "Rpant123",
+          "is-password": "true"
+        },
+        "invalidData": [],
+        "validData": []
+      }
+    }
+  },
+  "enabled": false,
+  "parentId": ""
+}

@@ -1,0 +1,50 @@
+{
+  "modifiedOn": "2024-02-09T07:00:22.475Z",
+  "name": "Verify $user loggedIn",
+  "id": "-1",
+  "type": 3,
+  "createdOn": "2024-02-09T01:26:58Z",
+  "content": {
+    "isSystemKeyword": false,
+    "title": "Verify $user loggedIn",
+    "parameters": [
+      {
+        "parameterId": "user_",
+        "entityTypeId": "user",
+        "suffix": ""
+      }
+    ],
+    "steps": [
+      {
+        "commented": false,
+        "action": "_exists",
+        "stepParameters": [
+          {
+            "isCustomParameter": false,
+            "customValue": "_heading2(\"My Account\")",
+            "screenId": "login",
+            "accessorId": "acc3"
+          }
+        ],
+        "stepType": "Assert",
+        "assertType": "Is_True"
+      },
+      {
+        "commented": false,
+        "action": "_exists",
+        "stepParameters": [
+          {
+            "isCustomParameter": false,
+            "customValue": "_link(\"Logout[1]\")",
+            "screenId": "login",
+            "accessorId": "acc0"
+          }
+        ],
+        "stepType": "Assert",
+        "assertType": "Is_True"
+      }
+    ]
+  },
+  "enabled": false,
+  "parentId": ""
+}

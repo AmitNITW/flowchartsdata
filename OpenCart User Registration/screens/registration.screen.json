@@ -1,0 +1,28 @@
+{
+  "modifiedOn": "2024-02-09T06:58:44.554Z",
+  "name": "registration",
+  "id": "-1",
+  "type": 2,
+  "createdOn": "2024-02-08T19:58:34Z",
+  "content": {
+    "accessors": [
+      {
+        "id": "acc0",
+        "name": "Checkbox Agree",
+        "accessor": "_checkbox(\"agree\")"
+      },
+      {
+        "id": "acc1",
+        "name": "Submit Continue",
+        "accessor": "_submit(\"Continue\")"
+      },
+      {
+        "id": "acc2",
+        "name": "Paragraph 1",
+        "accessor": "_paragraph(1)"
+      }
+    ]
+  },
+  "enabled": false,
+  "parentId": ""
+}

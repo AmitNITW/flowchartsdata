@@ -1,0 +1,33 @@
+{
+  "modifiedOn": "2024-02-09T07:00:21.341Z",
+  "name": "login",
+  "id": "-1",
+  "type": 2,
+  "createdOn": "2024-02-08T08:58:56Z",
+  "content": {
+    "accessors": [
+      {
+        "id": "acc0",
+        "name": "Link Logout 1",
+        "accessor": "_link(\"Logout[1]\")"
+      },
+      {
+        "id": "acc1",
+        "name": "Submit Login",
+        "accessor": "_submit(\"Login\")"
+      },
+      {
+        "id": "acc2",
+        "name": "Div Alert Alert Danger Alert Dismissible",
+        "accessor": "_div(\"alert alert-danger alert-dismissible\")"
+      },
+      {
+        "id": "acc3",
+        "name": "Heading2 My Account",
+        "accessor": "_heading2(\"My Account\")"
+      }
+    ]
+  },
+  "enabled": false,
+  "parentId": ""
+}

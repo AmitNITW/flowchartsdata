@@ -1,0 +1,144 @@
+{
+  "modifiedOn": "2024-04-15T08:33:31.115Z",
+  "name": "Register User",
+  "id": "-1",
+  "type": 0,
+  "createdOn": "2024-02-08T08:47:54Z",
+  "content": {
+    "nodesMap": {
+      "fcn_start_0": {
+        "id": "fcn_start_0",
+        "content": "Start",
+        "nodeType": "start",
+        "branches": [
+          "fcn_registeruser_0"
+        ],
+        "dataSetId": "-1"
+      },
+      "fcn_registeruser_0": {
+        "id": "fcn_registeruser_0",
+        "content": "Register User",
+        "nodeType": "pathlabel",
+        "branches": [
+          "fcn_userexists_0"
+        ],
+        "dataSetId": "-1"
+      },
+      "fcn_userexists_0": {
+        "id": "fcn_userexists_0",
+        "content": "$user.exists?",
+        "nodeType": "decision",
+        "branches": [
+          "fcn_registration_0",
+          null
+        ],
+        "dataSetId": "-1"
+      },
+      "fcn_registration_0": {
+        "id": "fcn_registration_0",
+        "content": "@registration",
+        "nodeType": "action",
+        "branches": [
+          "fcn_registeruser_1"
+        ],
+        "dataSetId": "-1"
+      },
+      "fcn_registeruser_1": {
+        "id": "fcn_registeruser_1",
+        "content": "Register $user",
+        "nodeType": "action",
+        "branches": [
+          "fcn_verifyusercreated_0"
+        ],
+        "dataSetId": "-1"
+      },
+      "fcn_verifyusercreated_0": {
+        "id": "fcn_verifyusercreated_0",
+        "content": "Verify $user created",
+        "nodeType": "state",
+        "branches": [
+          "fcn_userexiststrue_0"
+        ],
+        "dataSetId": "-1"
+      },
+      "fcn_userexiststrue_0": {
+        "id": "fcn_userexiststrue_0",
+        "content": "$user.exists\u003dtrue",
+        "nodeType": "state",
+        "branches": [
+          "fcn_userloggedintrue_0"
+        ],
+        "dataSetId": "-1"
+      },
+      "fcn_userloggedintrue_0": {
+        "id": "fcn_userloggedintrue_0",
+        "content": "$user.loggedIn\u003dtrue",
+        "nodeType": "state",
+        "branches": [],
+        "dataSetId": "-1"
+      }
+    },
+    "positions": {
+      "fcn_start_0": {
+        "top": 150,
+        "left": 500
+      },
+      "fcn_registeruser_0": {
+        "top": 243,
+        "left": 428
+      },
+      "fcn_userexists_0": {
+        "top": 319,
+        "left": 428
+      },
+      "fcn_registration_0": {
+        "top": 406.140625,
+        "left": 428
+      },
+      "fcn_registeruser_1": {
+        "top": 481.140625,
+        "left": 428
+      },
+      "fcn_verifyusercreated_0": {
+        "top": 565.28125,
+        "left": 428
+      },
+      "fcn_userexiststrue_0": {
+        "top": 645.421875,
+        "left": 428
+      },
+      "fcn_userloggedintrue_0": {
+        "top": 731.5625,
+        "left": 428
+      }
+    },
+    "settings": {
+      "maxProceedsPerPath": 10000,
+      "maxProceedDepth": 100,
+      "maxProceedsPerDepth": 1,
+      "maxProceedsForFirstDepth": 1,
+      "maxMatchingPaths": 3,
+      "maxPathRepititionsPerComboPath": 1,
+      "maxToggles": 2
+    },
+    "isPrimary": true,
+    "pathNames": [
+      {
+        "pathKey": [
+          "fcn_registeruser_0",
+          "fcn_userexists_0",
+          "fcn_registration_0",
+          "fcn_registeruser_1",
+          "fcn_verifyusercreated_0",
+          "fcn_userexiststrue_0",
+          "fcn_userloggedintrue_0"
+        ],
+        "isValidationsEnabled": true
+      }
+    ],
+    "flowChartUID": "fcUID_1707461274476",
+    "pathExecutionOrder": []
+  },
+  "enabled": true,
+  "parentId": ""
+}

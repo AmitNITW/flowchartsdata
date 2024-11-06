@@ -1,0 +1,35 @@
+{
+  "modifiedOn": "2024-02-09T06:58:58.067Z",
+  "name": "Logout $user",
+  "id": "-1",
+  "type": 3,
+  "createdOn": "2024-02-09T01:25:38Z",
+  "content": {
+    "isSystemKeyword": false,
+    "title": "Logout $user",
+    "parameters": [
+      {
+        "parameterId": "user_",
+        "entityTypeId": "user",
+        "suffix": ""
+      }
+    ],
+    "steps": [
+      {
+        "commented": false,
+        "action": "_click",
+        "stepParameters": [
+          {
+            "isCustomParameter": false,
+            "customValue": "_link(\"Logout[1]\")",
+            "screenId": "login",
+            "accessorId": "acc0"
+          }
+        ],
+        "stepType": "Action"
+      }
+    ]
+  },
+  "enabled": false,
+  "parentId": ""
+}

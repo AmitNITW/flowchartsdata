@@ -1,0 +1,23 @@
+{
+  "modifiedOn": "2024-02-09T06:57:59.862Z",
+  "name": "base",
+  "id": "-1",
+  "type": 2,
+  "createdOn": "2024-02-09T01:27:59Z",
+  "content": {
+    "accessors": [
+      {
+        "id": "acc0",
+        "name": "Link My Account",
+        "accessor": "_link(\"My Account\")"
+      },
+      {
+        "id": "acc1",
+        "name": "Link Register",
+        "accessor": "_link(\"Register\")"
+      }
+    ]
+  },
+  "enabled": false,
+  "parentId": ""
+}

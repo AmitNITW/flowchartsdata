@@ -1,0 +1,46 @@
+{
+  "modifiedOn": "2024-01-25T04:52:39.048Z",
+  "name": "Verify $user registered",
+  "id": "-1",
+  "type": 3,
+  "createdOn": "2023-09-11T14:20:43Z",
+  "content": {
+    "isSystemKeyword": false,
+    "title": "Verify $user registered",
+    "parameters": [
+      {
+        "parameterId": "user_",
+        "entityTypeId": "user",
+        "suffix": ""
+      }
+    ],
+    "steps": [
+      {
+        "commented": true,
+        "action": "_exists",
+        "stepParameters": [
+          {
+            "screenId": "registration",
+            "accessorId": "acc1"
+          }
+        ],
+        "stepType": "Assert",
+        "assertType": "Is_True"
+      },
+      {
+        "commented": false,
+        "action": "_exists",
+        "stepParameters": [
+          {
+            "screenId": "registration",
+            "accessorId": "acc1"
+          }
+        ],
+        "stepType": "Assert",
+        "assertType": "Is_True"
+      }
+    ]
+  },
+  "enabled": false,
+  "parentId": ""
+}

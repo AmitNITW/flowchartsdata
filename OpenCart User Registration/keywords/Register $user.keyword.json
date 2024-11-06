@@ -1,0 +1,172 @@
+{
+  "modifiedOn": "2024-02-09T06:58:35.904Z",
+  "name": "Register $user",
+  "id": "-1",
+  "type": 3,
+  "createdOn": "2024-02-09T01:25:14Z",
+  "content": {
+    "isSystemKeyword": false,
+    "title": "Register $user",
+    "parameters": [
+      {
+        "parameterId": "user_",
+        "entityTypeId": "user",
+        "suffix": ""
+      }
+    ],
+    "steps": [
+      {
+        "commented": false,
+        "action": "_setValue",
+        "stepParameters": [
+          {
+            "isCustomParameter": false,
+            "customValue": "_textbox(\"firstname\")",
+            "parameterId": "user_",
+            "attributeId": "attr_01707461914621",
+            "accessorId": "acc0"
+          },
+          {
+            "isCustomParameter": false,
+            "customValue": "\"Rishabh\"",
+            "parameterId": "user_",
+            "attributeId": "attr_01707461914621"
+          }
+        ],
+        "stepType": "Action"
+      },
+      {
+        "commented": false,
+        "action": "_setValue",
+        "stepParameters": [
+          {
+            "isCustomParameter": false,
+            "customValue": "_textbox(\"lastname\")",
+            "parameterId": "user_",
+            "attributeId": "attr_11707461914621",
+            "accessorId": "acc0"
+          },
+          {
+            "isCustomParameter": false,
+            "customValue": "\"Pant\"",
+            "parameterId": "user_",
+            "attributeId": "attr_11707461914621"
+          }
+        ],
+        "stepType": "Action"
+      },
+      {
+        "commented": false,
+        "action": "_setValue",
+        "stepParameters": [
+          {
+            "isCustomParameter": false,
+            "customValue": "_emailbox(\"email\")",
+            "parameterId": "user_",
+            "attributeId": "attr_21707461914621",
+            "accessorId": "acc0"
+          },
+          {
+            "isCustomParameter": false,
+            "customValue": "\"r.pant11@example.com\"",
+            "parameterId": "user_",
+            "attributeId": "attr_21707461914621"
+          }
+        ],
+        "stepType": "Action"
+      },
+      {
+        "commented": false,
+        "action": "_setValue",
+        "stepParameters": [
+          {
+            "isCustomParameter": false,
+            "customValue": "_telephonebox(\"telephone\")",
+            "parameterId": "user_",
+            "attributeId": "attr_31707461914621",
+            "accessorId": "acc0"
+          },
+          {
+            "isCustomParameter": false,
+            "customValue": "\"9500000123\"",
+            "parameterId": "user_",
+            "attributeId": "attr_31707461914621"
+          }
+        ],
+        "stepType": "Action"
+      },
+      {
+        "commented": false,
+        "action": "_setPassword",
+        "stepParameters": [
+          {
+            "isCustomParameter": false,
+            "customValue": "_password(\"password\")",
+            "parameterId": "user_",
+            "attributeId": "attr_41707461914621",
+            "accessorId": "acc0"
+          },
+          {
+            "isCustomParameter": false,
+            "customValue": "\"Rpant123\"",
+            "parameterId": "user_",
+            "attributeId": "attr_41707461914621"
+          }
+        ],
+        "stepType": "Action"
+      },
+      {
+        "commented": false,
+        "action": "_setPassword",
+        "stepParameters": [
+          {
+            "isCustomParameter": false,
+            "customValue": "_password(\"confirm\")",
+            "parameterId": "user_",
+            "attributeId": "attr_41707461914621",
+            "accessorId": "acc1"
+          },
+          {
+            "isCustomParameter": false,
+            "customValue": "\"Rpant123\"",
+            "parameterId": "user_",
+            "attributeId": "attr_41707461914621"
+          }
+        ],
+        "stepType": "Action"
+      },
+      {
+        "commented": false,
+        "action": "_check",
+        "stepParameters": [
+          {
+            "isCustomParameter": false,
+            "customValue": "_checkbox(\"agree\")",
+            "screenId": "registration",
+            "accessorId": "acc0"
+          },
+          {
+            "isCustomParameter": true,
+            "customValue": "true"
+          }
+        ],
+        "stepType": "Action"
+      },
+      {
+        "commented": false,
+        "action": "_click",
+        "stepParameters": [
+          {
+            "isCustomParameter": false,
+            "customValue": "_submit(\"Continue\")",
+            "screenId": "registration",
+            "accessorId": "acc1"
+          }
+        ],
+        "stepType": "Action"
+      }
+    ]
+  },
+  "enabled": false,
+  "parentId": ""
+}

@@ -1,0 +1,29 @@
+{
+  "modifiedOn": "2024-02-09T06:59:31.319Z",
+  "name": "Navigate from @registration to @login",
+  "id": "-1",
+  "type": 3,
+  "createdOn": "2024-02-09T01:26:09Z",
+  "content": {
+    "isSystemKeyword": true,
+    "title": "Navigate from @registration to @login",
+    "parameters": [],
+    "steps": [
+      {
+        "commented": false,
+        "action": "_click",
+        "stepParameters": [
+          {
+            "isCustomParameter": false,
+            "customValue": "_link(\"Login[1]\")",
+            "screenId": "logout",
+            "accessorId": "acc1"
+          }
+        ],
+        "stepType": "Action"
+      }
+    ]
+  },
+  "enabled": false,
+  "parentId": ""
+}

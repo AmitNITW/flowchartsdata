@@ -1,0 +1,157 @@
+{
+  "modifiedOn": "2024-03-19T08:46:32.296Z",
+  "name": "Login User",
+  "id": "-1",
+  "type": 0,
+  "createdOn": "2024-02-07T16:21:34Z",
+  "content": {
+    "nodesMap": {
+      "fcn_start_0": {
+        "id": "fcn_start_0",
+        "content": "Start",
+        "nodeType": "start",
+        "branches": [
+          "fcn_loginuser_0"
+        ],
+        "dataSetId": "-1"
+      },
+      "fcn_loginuser_0": {
+        "id": "fcn_loginuser_0",
+        "content": "Login User",
+        "nodeType": "pathlabel",
+        "branches": [
+          "fcn_userexists_1707461517225_0"
+        ],
+        "dataSetId": "-1"
+      },
+      "fcn_userexists_1707461517225_0": {
+        "id": "fcn_userexists_1707461517225_0",
+        "content": "$user.exists?",
+        "nodeType": "decision",
+        "branches": [
+          null,
+          "fcn_userloggedintrue_1707461517225_0"
+        ],
+        "dataSetId": "-1"
+      },
+      "fcn_userloggedintrue_1707461517225_0": {
+        "id": "fcn_userloggedintrue_1707461517225_0",
+        "content": "$user.loggedIn\u003d\u003dfalse?",
+        "nodeType": "decision",
+        "branches": [
+          null,
+          "fcn_login_0"
+        ],
+        "dataSetId": "-1"
+      },
+      "fcn_userexists_1707461533817_0": {
+        "id": "fcn_userexists_1707461533817_0",
+        "content": "$user._correctPassword?",
+        "nodeType": "decision",
+        "branches": [
+          "fcn_loginuser_1707461596459_0",
+          "fcn_loginuser_1"
+        ],
+        "dataSetId": "-1"
+      },
+      "fcn_login_0": {
+        "id": "fcn_login_0",
+        "content": "@login",
+        "nodeType": "action",
+        "branches": [
+          "fcn_userexists_1707461533817_0"
+        ],
+        "dataSetId": "-1"
+      },
+      "fcn_loginuser_1": {
+        "id": "fcn_loginuser_1",
+        "content": "Login $user",
+        "nodeType": "action",
+        "branches": [
+          "fcn_verifyuserloggedin_0"
+        ],
+        "dataSetId": "-1"
+      },
+      "fcn_verifyuserloggedin_0": {
+        "id": "fcn_verifyuserloggedin_0",
+        "content": "Verify $user loggedIn",
+        "nodeType": "state",
+        "branches": [],
+        "dataSetId": "-1"
+      },
+      "fcn_loginuser_1707461596459_0": {
+        "id": "fcn_loginuser_1707461596459_0",
+        "content": "Login $user(password\u003d\"wrong\")",
+        "nodeType": "action",
+        "branches": [
+          "fcn_verifyuserloggedin_1707461596459_0"
+        ],
+        "dataSetId": "-1"
+      },
+      "fcn_verifyuserloggedin_1707461596459_0": {
+        "id": "fcn_verifyuserloggedin_1707461596459_0",
+        "content": "Verify $user not loggedIn",
+        "nodeType": "state",
+        "branches": [],
+        "dataSetId": "-1"
+      }
+    },
+    "positions": {
+      "fcn_start_0": {
+        "top": 150,
+        "left": 500
+      },
+      "fcn_loginuser_0": {
+        "top": 211,
+        "left": 500
+      },
+      "fcn_userexists_1707461517225_0": {
+        "top": 270,
+        "left": 500
+      },
+      "fcn_userloggedintrue_1707461517225_0": {
+        "top": 342.140625,
+        "left": 500
+      },
+      "fcn_login_0": {
+        "top": 429.28125,
+        "left": 500
+      },
+      "fcn_userexists_1707461533817_0": {
+        "top": 504.28125,
+        "left": 500
+      },
+      "fcn_loginuser_1707461596459_0": {
+        "top": 590.421875,
+        "left": 783
+      },
+      "fcn_verifyuserloggedin_1707461596459_0": {
+        "top": 667.5625,
+        "left": 783
+      },
+      "fcn_loginuser_1": {
+        "top": 590.421875,
+        "left": 503
+      },
+      "fcn_verifyuserloggedin_0": {
+        "top": 664.5625,
+        "left": 500
+      }
+    },
+    "settings": {
+      "maxProceedsPerPath": 10000,
+      "maxProceedDepth": 100,
+      "maxProceedsPerDepth": 1,
+      "maxProceedsForFirstDepth": 1,
+      "maxMatchingPaths": 3,
+      "maxPathRepititionsPerComboPath": 1,
+      "maxToggles": 2
+    },
+    "isPrimary": true,
+    "pathNames": [],
+    "flowChartUID": "fcUID_1707461494834",
+    "pathExecutionOrder": []
+  },
+  "enabled": true,
+  "parentId": ""
+}
