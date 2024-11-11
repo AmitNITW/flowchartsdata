@@ -71,7 +71,7 @@
       },
       "fcn_loginuser_1707461596459_0": {
         "id": "fcn_loginuser_1707461596459_0",
-        "content": "Login $user(password\u003d\"new_wrong\")",
+        "content": "Login $user(password\u003d\"newwrong\")",
         "nodeType": "action",
         "branches": [
           "fcn_verifyuserloggedin_1707461596459_0"
