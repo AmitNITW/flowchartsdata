@@ -1,9 +1,7 @@
 {
-  "modifiedOn": "2024-04-15T08:33:31.115Z",
   "name": "Register User",
   "id": "-1",
   "type": 0,
-  "createdOn": "2024-02-08T08:47:54Z",
   "content": {
     "nodesMap": {
       "fcn_start_0": {
@@ -12,8 +10,7 @@
         "nodeType": "start",
         "branches": [
           "fcn_registeruser_0"
-        ],
-        "dataSetId": "-1"
+        ]
       },
       "fcn_registeruser_0": {
         "id": "fcn_registeruser_0",
@@ -21,8 +18,7 @@
         "nodeType": "pathlabel",
         "branches": [
           "fcn_userexists_0"
-        ],
-        "dataSetId": "-1"
+        ]
       },
       "fcn_userexists_0": {
         "id": "fcn_userexists_0",
@@ -31,8 +27,7 @@
         "branches": [
           "fcn_registration_0",
           null
-        ],
-        "dataSetId": "-1"
+        ]
       },
       "fcn_registration_0": {
         "id": "fcn_registration_0",
@@ -40,8 +35,7 @@
         "nodeType": "action",
         "branches": [
           "fcn_registeruser_1"
-        ],
-        "dataSetId": "-1"
+        ]
       },
       "fcn_registeruser_1": {
         "id": "fcn_registeruser_1",
@@ -49,8 +43,7 @@
         "nodeType": "action",
         "branches": [
           "fcn_verifyusercreated_0"
-        ],
-        "dataSetId": "-1"
+        ]
       },
       "fcn_verifyusercreated_0": {
         "id": "fcn_verifyusercreated_0",
@@ -58,8 +51,7 @@
         "nodeType": "state",
         "branches": [
           "fcn_userexiststrue_0"
-        ],
-        "dataSetId": "-1"
+        ]
       },
       "fcn_userexiststrue_0": {
         "id": "fcn_userexiststrue_0",
@@ -67,59 +59,57 @@
         "nodeType": "state",
         "branches": [
           "fcn_userloggedintrue_0"
-        ],
-        "dataSetId": "-1"
+        ]
       },
       "fcn_userloggedintrue_0": {
         "id": "fcn_userloggedintrue_0",
         "content": "$user.loggedIn\u003dtrue",
         "nodeType": "state",
-        "branches": [],
-        "dataSetId": "-1"
+        "branches": []
       }
     },
     "positions": {
       "fcn_start_0": {
-        "top": 150,
-        "left": 500
+        "top": 150.0,
+        "left": 500.0
       },
       "fcn_registeruser_0": {
-        "top": 243,
-        "left": 428
+        "top": 243.0,
+        "left": 428.0
       },
       "fcn_userexists_0": {
-        "top": 319,
-        "left": 428
+        "top": 319.0,
+        "left": 428.0
       },
       "fcn_registration_0": {
         "top": 406.140625,
-        "left": 428
+        "left": 428.0
       },
       "fcn_registeruser_1": {
         "top": 481.140625,
-        "left": 428
+        "left": 428.0
       },
       "fcn_verifyusercreated_0": {
         "top": 565.28125,
-        "left": 428
+        "left": 428.0
       },
       "fcn_userexiststrue_0": {
-        "top": 645.421875,
-        "left": 428
+        "top": 662.4125061035156,
+        "left": 426.0
       },
       "fcn_userloggedintrue_0": {
-        "top": 731.5625,
-        "left": 428
+        "top": 764.5625,
+        "left": 428.0
       }
     },
     "settings": {
-      "maxProceedsPerPath": 10000,
       "maxProceedDepth": 100,
-      "maxProceedsPerDepth": 1,
       "maxProceedsForFirstDepth": 1,
-      "maxMatchingPaths": 3,
+      "maxProceedsPerDepth": 1,
       "maxPathRepititionsPerComboPath": 1,
-      "maxToggles": 2
+      "maxProceedsPerPath": 10000,
+      "maxToggles": 2,
+      "maxMatchingPaths": 3
     },
     "isPrimary": true,
     "pathNames": [
