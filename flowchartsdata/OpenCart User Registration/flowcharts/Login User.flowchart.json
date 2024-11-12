@@ -172,7 +172,10 @@
       }
     ],
     "flowChartUID": "fcUID_1707461494834",
-    "pathExecutionOrder": []
+    "pathExecutionOrder": [
+      "17314054575921",
+      "17314054507610"
+    ]
   },
   "enabled": true,
   "parentId": ""
