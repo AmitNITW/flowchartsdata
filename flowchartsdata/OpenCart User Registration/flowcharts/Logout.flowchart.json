@@ -10,7 +10,8 @@
         "nodeType": "start",
         "branches": [
           "fcn_logoutuser_0",
-          "fcn_createname_0"
+          "fcn_createname_0",
+          "fcn_createmyname_0"
         ]
       },
       "fcn_logoutuser_0": {
@@ -60,6 +61,36 @@
         "branches": [
           "fcn_userloggedinfalse_0"
         ]
+      },
+      "fcn_createmyname_0": {
+        "id": "fcn_createmyname_0",
+        "content": "Create myname",
+        "nodeType": "pathlabel",
+        "branches": [
+          "fcn_createmyname_1"
+        ]
+      },
+      "fcn_createmyname_1": {
+        "id": "fcn_createmyname_1",
+        "content": "Create $myname",
+        "nodeType": "action",
+        "branches": [
+          "fcn_assertmynamecreated_0"
+        ]
+      },
+      "fcn_assertmynamecreated_0": {
+        "id": "fcn_assertmynamecreated_0",
+        "content": "Assert $myname Created",
+        "nodeType": "state",
+        "branches": [
+          "fcn_mynameexiststrue_0"
+        ]
+      },
+      "fcn_mynameexiststrue_0": {
+        "id": "fcn_mynameexiststrue_0",
+        "content": "$myname.exists\u003dtrue",
+        "nodeType": "state",
+        "branches": []
       },
       "fcn_createname_0": {
         "id": "fcn_createname_0",
@@ -120,6 +151,22 @@
       "fcn_userloggedinfalse_0": {
         "top": 606.421875,
         "left": 500.0
+      },
+      "fcn_createmyname_0": {
+        "top": 236.2,
+        "left": 975.0
+      },
+      "fcn_createmyname_1": {
+        "top": 301.121875,
+        "left": 975.0
+      },
+      "fcn_assertmynamecreated_0": {
+        "top": 361.121875,
+        "left": 975.0
+      },
+      "fcn_mynameexiststrue_0": {
+        "top": 421.121875,
+        "left": 975.0
       },
       "fcn_createname_0": {
         "top": 211.0,
