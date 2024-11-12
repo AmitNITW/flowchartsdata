@@ -10,6 +10,7 @@
         "nodeType": "start",
         "branches": [
           "fcn_logoutuser_0",
+          "fcn_createname_0",
           "fcn_createmyname_0"
         ]
       },
@@ -90,6 +91,36 @@
         "content": "$myname.exists\u003dtrue",
         "nodeType": "state",
         "branches": []
+      },
+      "fcn_createname_0": {
+        "id": "fcn_createname_0",
+        "content": "Create myname",
+        "nodeType": "pathlabel",
+        "branches": [
+          "fcn_createname_1"
+        ]
+      },
+      "fcn_createname_1": {
+        "id": "fcn_createname_1",
+        "content": "Create $name",
+        "nodeType": "action",
+        "branches": [
+          "fcn_assertnamecreated_0"
+        ]
+      },
+      "fcn_assertnamecreated_0": {
+        "id": "fcn_assertnamecreated_0",
+        "content": "Assert $name Created",
+        "nodeType": "state",
+        "branches": [
+          "fcn_nameexiststrue_0"
+        ]
+      },
+      "fcn_nameexiststrue_0": {
+        "id": "fcn_nameexiststrue_0",
+        "content": "$name.exists\u003dtrue",
+        "nodeType": "state",
+        "branches": []
       }
     },
     "positions": {
@@ -122,18 +153,34 @@
         "left": 500.0
       },
       "fcn_createmyname_0": {
+        "top": 236.2,
+        "left": 975.0
+      },
+      "fcn_createmyname_1": {
+        "top": 301.121875,
+        "left": 975.0
+      },
+      "fcn_assertmynamecreated_0": {
+        "top": 361.121875,
+        "left": 975.0
+      },
+      "fcn_mynameexiststrue_0": {
+        "top": 421.121875,
+        "left": 975.0
+      },
+      "fcn_createname_0": {
         "top": 211.0,
         "left": 780.0
       },
-      "fcn_createmyname_1": {
+      "fcn_createname_1": {
         "top": 271.0,
         "left": 780.0
       },
-      "fcn_assertmynamecreated_0": {
+      "fcn_assertnamecreated_0": {
         "top": 331.0,
         "left": 780.0
       },
-      "fcn_mynameexiststrue_0": {
+      "fcn_nameexiststrue_0": {
         "top": 391.0,
         "left": 780.0
       }
